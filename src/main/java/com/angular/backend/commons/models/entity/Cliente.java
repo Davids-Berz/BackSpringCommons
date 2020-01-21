@@ -21,6 +21,7 @@ public class Cliente implements Serializable {
     private String nombre;
 
     @NotEmpty
+    @Size(min = 4, max = 12)
     private String apellido;
 
     @NotEmpty
